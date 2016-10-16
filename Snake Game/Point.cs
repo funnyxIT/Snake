@@ -33,7 +33,7 @@ namespace Snake_Game
         }
 
 
-        public void Move(int offset,Direction direction)
+        public void Move(int offset,Direction direction) //Snake direction
         {
             if (direction == Direction.RIGHT)
             {
@@ -43,13 +43,17 @@ namespace Snake_Game
                 x = x - offset;
             } else if (direction == Direction.UP)
             {
-                y = y + offset;
+                y = y - offset;
             }else if (direction == Direction.DOWN)
             {
-                y = y - offset;
+                y = y + offset;
             }
         }
-
+        public void Clear()
+        {
+            sym = ' ';
+            Draw();
+        }
 
 
         public void Draw() // Create new point(code)
