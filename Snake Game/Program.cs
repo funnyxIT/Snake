@@ -18,9 +18,30 @@ namespace Snake_Game
 
             Point p2 = new Point(4,5,'#');
            
-            p2.Draw();   
+            p2.Draw();
+
+            Point p3 = new Point(8, 7, '$');
+
+
+            Point p4 = new Point(2, 9, '&');
+
+            List<Point> pList = new List<Point>(); // Add point list 
+            pList.Add(p1);
+            pList.Add(p2);
+            pList.Add(p3);
+            pList.Add(p4);
+
+
+            List<char> cList = new List<char>();
+            cList.Add('#');
+            cList.Add('#');
+            cList.Add('#');
+            cList.Add('#');
 
             
+
+
+
             Console.ReadLine();
 
         }
