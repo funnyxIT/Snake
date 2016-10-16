@@ -12,9 +12,21 @@ namespace Snake_Game
         public int y;
         public char sym;
 
+        public Point()
+        {
+        }
 
 
-        public void Draw()
+        public Point (int _x,int _y,char _sym)
+        {
+            x = _x;
+            y = _y;
+            sym = _sym;
+        }
+
+
+
+        public void Draw() // Create new point(code)
         {
             Console.SetCursorPosition(x, y);
             Console.Write(sym);
