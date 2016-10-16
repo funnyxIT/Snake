@@ -11,23 +11,21 @@ namespace Snake_Game
         static void Main(string[] args)
         {
 
-            Point p1 = new Point(1,3,'*'); // create new point
-            
-            p1.Draw();   //Draw symbol
+            Console.SetBufferSize(80, 25);
 
 
-            Point p2 = new Point(4,5,'#');
-           
-            p2.Draw();
-
-            HorizontalLine line = new HorizontalLine(5,10,8,'+');
+            // Draw Lines
+            HorizontalLine line = new HorizontalLine(0,78,0,'+');
             line.Drow();
 
-            VerticalLine line1 = new VerticalLine(6, 10, 10, '*');
-            line1.Drow();
+            VerticalLine line2 = new VerticalLine(0,24,0, '+');
+            line2.Drow();
 
-            
+            VerticalLine line3 = new VerticalLine(0, 24, 78, '+');
+            line3.Drow();
 
+            HorizontalLine line4 = new HorizontalLine(0, 78, 24, '+');
+            line4.Drow();
 
 
             Console.ReadLine();
